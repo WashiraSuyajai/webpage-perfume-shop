@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  background: rgb(241, 222, 239);
+}
+
+/*--Navbar--*/
+.m-container {
+  overflow: auto;
+  background-color: rgb(210, 109, 241);
+}
+
+.menu {
+  float: right;
+  font-size: 18px;
+  padding: 15px;
+  display: none;
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  list-style-type: none;
+  float: right;
+  font-size: 18px;
+  padding: 15px;
+}
+
+.navbar li:hover {
+  color: rgb(226, 21, 31);
+}
+
+.navbar li a:focus {
+  color: rgb(209, 13, 13);
+  border-bottom: 2px solid;
+}
+
+@media (max-width: 375px) {
+  .menu {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar li {
+    float: none;
+  }
+
+  .m-container:hover .navbar {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 51px;
+    background-color: rgb(8, 166, 228);
+  }
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*--Footer--*/
+.footer {
+  overflow: auto;
+  height: 250px;
+  background: rgb(225, 225, 230);
+}
+.text-footer {
+  margin-top: 125px;
+  margin-left: 43%;
+  align-items: center;
+}
+
+@media (max-width:611px) {
+  .text-footer {
+    margin-left: 32%;
+  }
+}
+/*IPhone 6/7/8 Plus*/
+@media (max-width:414px) {
+  .text-footer {
+    margin-left: 23%;
+  }
+}
+/*IPad*/
+@media (min-width:415px) {
+  .text-footer {
+    margin-left: 35%;
+  }
+}
+
+/*IPad Pro*/
+@media (min-width:1024px) {
+  .text-footer {
+    margin-left: 40%;
+  }
+}
+
+/*PC*/
+@media (min-width:1349px) {
+  .text-footer {
+    margin-left: 43%;
+  }
+}
+
+/*--Cover picture--*/
+.cover {
+  width: 100%;
+  height: auto;
+}
+
+/*--Content--*/
+.content {
+  overflow: auto;
+  background: rgb(241, 222, 239);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-row {
+  padding: 3% 0%;
+  height: 120%;
+  flex-direction: row;
+  align-items: stretch;
+  align-content: space-between;
+  justify-content: center;
+}
+
+.content>p {
+  padding: 3% 10%;
+}
+
+.item {
+  text-align: center;
+  color: rgb(97, 88, 88);
+  border: 1px solid #000;
+  border-radius: 6px 6px;
+  background: rgb(233, 206, 227);
+  padding: 12px;
+  max-width: 250px;
+  margin: 15px;
+  flex-grow: 1;
+  transition: transform 0.2s;
+}
+.item:hover {
+  -webkit-transform: scale(1.01); /* safari, chrome */
+  -ms-transform: scale(1.01); /* IE */
+  transform: scale(1.01); /* all*/
+  box-shadow: 5px 5px 5px 5px #888888;
+}
+.picframe {
+  width: 100%;
+  overflow: auto;
+  border: 1px solid rgb(158, 153, 153);
+  border-radius: 12px 12px;
+  background: #008080;
+}
+.picframe img {
+  width: 100%;
+  display: block;
+}
